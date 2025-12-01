@@ -1337,13 +1337,13 @@ body {
 
 /* -------------------- MENU 3 -------------------- */
 .menu3 {
-    background: url('https://fondosanimados.com/wp-content/uploads/2023/04/espacio-1.jpg');
+    background: url("https://images.unsplash.com/photo-1503264116251-35a269479413") no-repeat center center;
     background-size: cover;
-    background-position: center;
     min-height: 100vh;
     font-family: 'Comic Sans MS';
     padding: 20px;
 }
+
 
 .menu3 nav {
     display: flex;
