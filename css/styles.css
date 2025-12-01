@@ -176,7 +176,6 @@ p {
 }
 /* BANCO */
 
-/* La página del banco tiene su propio scope */
 .banco-page {
     font-family: Verdana, sans-serif;
     text-align: center;
@@ -275,13 +274,17 @@ p {
     background-color: #e8f5e9;
 }
 
-/* TABLA BANCO */
+/* TABLA BANCO - CUADRO VERDE RESPONSIVO */
 .cuadro-verde {
     background-color: #4CAF50;
     color: white;
-    padding: 50px 400px;
+    padding: 30px 20px;     
     border-radius: 25px;
     animation: bajar 2s ease;
+    max-width: 800px;       
+    width: 90%;             
+    margin: 0 auto;         
+    text-align: center;     
 }
 
 table {
@@ -300,6 +303,7 @@ th {
     background: #4CAF50;
     color: white;
 }
+
 
 /* GALERÍA */
 .galeria {
