@@ -1487,15 +1487,21 @@ body {
 /* noticias */
 .news-page {
     font-family: Arial, sans-serif;
-    background: #f4f4f7;
+    background: url("https://images.unsplash.com/photo-1522199755839-a2bacb67c546") no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 20px;
     color: #333;
 }
 
+/* Fondo blanco semitransparente para mantener legibilidad */
 .news-page .container {
     max-width: 800px;
     margin: auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 .news-page .card {
@@ -1504,6 +1510,14 @@ body {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* La imagen manda: el recuadro se adapta a su tamaño */
+.news-page .card img {
+    width: 100%;      /* se ajusta al ancho del contenedor */
+    height: auto;     /* mantiene proporción natural */
+    display: block;
+    border-radius: 8px;
 }
 
 .news-page .like {
