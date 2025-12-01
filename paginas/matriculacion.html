@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/formulario_matriculacion.js"></script>
+</head>
+<body class="form-body">
+    <div class="signup-box">
+        <h1 class="signup-title">SIGN UP</h1>
+
+        <form>
+            <div class="form-row-vertical">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+
+            <div class="form-row-vertical">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div class="form-row-vertical">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-row-vertical">
+                <span class="label-inline">Course</span>
+
+                <div class="course-grid">
+                    <div class="course-column">
+                        <label>
+                            <input type="radio" name="course" value="python">
+                            Python
+                        </label>
+                        <label>
+                            <input type="radio" name="course" value="sql">
+                            SQL
+                        </label>
+                    </div>
+
+                    <div class="course-column">
+                        <label>
+                            <input type="radio" name="course" value="java">
+                            Java
+                        </label>
+                        <label>
+                            <input type="radio" name="course" value="css">
+                            CSS
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="signup-btn">SIGN UP</button>
+        </form>
+    </div>
+</body>
+</html>

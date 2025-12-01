@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="comments-page">
+        <div class="container">
+            <h2>Comentarios</h2>
+
+            <div class="card">
+                <h3>Asuncion</h3>
+                <p>Asunción es la ciudad capital de Paraguay rodeada por el río Paraguay. Es conocida por su gran Palacio de López, la sede de gobierno que alberga las oficinas presidenciales.</p>
+                <span class="like-btn" data-liked="false" data-likes="0">🤍 Like</span>
+            </div>
+
+            <div class="card">
+                <h3>Paraguay</h3>
+                <p>Paraguay es un país sin litoral que se encuentra entre Argentina, Brasil y Bolivia, con grandes extensiones de pantanos, bosques subtropicales y chaco, extensiones de naturaleza que abarcan sabanas y matorrales.</p>
+                <span class="like-btn" data-liked="false" data-likes="0">🤍 Like</span>
+            </div>
+
+            <div class="card">
+                <h3>La polka paraguaya</h3>
+                <p>La polka paraguaya es un género de música popular de carácter vocal o instrumental. Previo a este género, en el periodo anterior a la independencia del Paraguay, los estilos más practicados a comienzos del siglo XIX eran los ritmos de origen jesuítico y español.</p>
+                <span class="like-btn" data-liked="false" data-likes="0">🤍 Like</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const botones = document.querySelectorAll(".like-btn");
+
+        botones.forEach(boton => {
+            boton.addEventListener("click", () => {
+
+                let likes = parseInt(boton.getAttribute("data-likes"));
+                let liked = boton.getAttribute("data-liked") === "true";
+
+                if (liked) {
+                    // Quitar like
+                    likes--;
+                    boton.setAttribute("data-liked", "false");
+                    boton.textContent = `🤍 Like ${likes}`;
+                } else {
+                    // Dar like
+                    likes++;
+                    boton.setAttribute("data-liked", "true");
+                    boton.textContent = `Te gusta ❤️ ${likes}`;
+                }
+
+                boton.setAttribute("data-likes", likes);
+            });
+        });
+    </script>
+
+</body>
+</html>

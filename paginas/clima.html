@@ -1,0 +1,76 @@
+<!-- clima.html completo aquí -->
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto APIs – Inicio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="api-page">
+
+<div class="app-container">
+    <header>
+        <div class="logo-title">
+            <h1>API del Clima</h1>
+            <p>Consulta el clima por ciudad (OpenWeather)</p>
+        </div>
+        <div class="badge">Clima</div>
+    </header>
+
+    <nav class="nav-buttons">
+       <a class="nav-btn" href="./index.html">Inicio</a>
+        <a class="nav-btn" href="clima.html">API Clima</a>
+        <a class="nav-btn" href="paises.html">API Países</a>
+        <a class="nav-btn" href="pokemon.html">API Pokémon</a>
+        <a class="nav-btn" href="rick_morty.html">API Rick & Morty</a>
+        <a class="nav-btn" href="criptomonedas.html">API Criptomonedas</a>
+    </nav>
+
+    <section class="main-content">
+        <div class="tool-card">
+            <h2>Buscador de clima</h2>
+            <p class="description">
+                Ingresá el nombre de una ciudad y obtené la temperatura, humedad y una breve descripción.
+            </p>
+
+            <div class="form-group">
+                <label for="ciudad-input">Ciudad</label>
+                <input id="ciudad-input" type="text" placeholder="Ej: Buenos Aires">
+            </div>
+            <button id="btn-buscar-clima" class="btn-primary">
+                <span>Consultar clima</span>
+            </button>
+
+            <p class="info-message">
+                Recordá que necesitás una API key de OpenWeather para que funcione la consulta.
+            </p>
+
+            <div id="clima-resultado" class="result-card" style="display:none;">
+                <div class="result-title">Resultados</div>
+                <div class="result-grid">
+                    <div>
+                        <div class="result-label">Ciudad</div>
+                        <div id="clima-ciudad" class="result-value"></div>
+                    </div>
+                    <div>
+                        <div class="result-label">Temperatura</div>
+                        <div id="clima-temperatura" class="result-value"></div>
+                    </div>
+                    <div>
+                        <div class="result-label">Humedad</div>
+                        <div id="clima-humedad" class="result-value"></div>
+                    </div>
+                    <div>
+                        <div class="result-label">Descripción</div>
+                        <div id="clima-descripcion" class="result-value"></div>
+                    </div>
+                </div>
+                <p id="clima-error" class="error-message"></p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="./js/apis.js" defer></script>
+</body>
+</html>

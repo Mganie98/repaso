@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        .like-btn {
+            cursor: pointer;
+            font-size: 18px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="social-page">
+        <div class="container">
+            <h2>Social Media</h2>
+
+            <div class="card">
+                <h3>Asuncion</h3>
+                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/abccolor/2LGYJQYLQJCZXEN6HPYYAUYU24.jpg" class="media" />
+                <span class="like-btn" data-liked="false" data-likes="0">🤍 Like </span>
+            </div>
+
+            <div class="card">
+                <h3>Paraguay</h3>
+                <video class="media" controls>
+                    <source src="./statics/videoplayback.mp4" type="video/mp4" />
+                </video>
+                <span class="like-btn" data-liked="false" data-likes="0">🤍 Like </span>
+            </div>
+
+            <div class="card">
+                <h3>Pajaro Campana</h3>
+                <audio controls>
+                    <source src="./statics/Pájaro Campana.mp3" type="audio/mp3" />
+                </audio>
+                <span class="like-btn" data-liked="false" data-likes="0">🤍 Like </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const likeButtons = document.querySelectorAll(".like-btn");
+
+        likeButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                let likes = parseInt(btn.getAttribute("data-likes"));
+                let userLiked = btn.getAttribute("data-liked") === "true";
+
+                if (userLiked) {
+                    // Si ya dio like, lo quita
+                    likes--;
+                    btn.setAttribute("data-liked", "false");
+                    btn.textContent = `🤍 Like`;
+
+                } else {
+                    // Si no ha dado like, lo agrega
+                    likes++;
+                    btn.setAttribute("data-liked", "true");
+                    btn.textContent = `Te gusta ❤️ ${likes}`;
+                }
+
+                // Guardar conteo
+                btn.setAttribute("data-likes", likes);
+
+            });
+        });
+    </script>
+</body>
+</html>

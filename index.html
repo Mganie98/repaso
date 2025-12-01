@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final - Página Principal</title>
+
+  <!-- Archivos externos -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Proyecto Final – Sitio Web</h1>
+    <button class="menu-toggle" id="menuToggle">Menú</button>
+
+    <nav class="navbar" id="mainNavbar">
+
+      <div class="nav-item">
+        <a class="nav-link" href="index.html">Inicio</a>
+      </div>
+
+      <div class="nav-item">
+        <a class="nav-link" href="./paginas/html_basico.html">HTML básico</a>
+      </div>
+
+      <!-- Banco -->
+      <div class="nav-item">
+        <span class="nav-link">Banco ▼</span>
+        <div class="dropdown-content">
+          <a href="./paginas/banco_tabla.html">Banco - Tabla</a>
+          <a href="./paginas/banco_miembros.html">Banco - Miembros</a>
+        </div>
+      </div>
+      <!-- Galería -->
+      <div class="nav-item">
+        <a class="nav-link" href="./paginas/galeria.html">Galería</a>
+      </div>
+
+      <!-- Operaciones -->
+      <div class="nav-item">
+        <a class="nav-link" href="./paginas/operaciones.html">Operaciones</a>
+      </div>
+
+      <!-- Formularios -->
+      <div class="nav-item">
+        <span class="nav-link">Formularios ▼</span>
+        <div class="dropdown-content">
+          <a href="./paginas/matriculacion.html">Matriculación</a>
+          <a href="paginas/prueba.html">Prueba</a>
+        </div>
+      </div>
+
+      <!-- APIs -->
+      <div class="nav-item">
+        <span class="nav-link">APIs ▼</span>
+        <div class="dropdown-content">
+          <a href="./paginas/clima.html">Clima (OpenWeather)</a>
+          <a href="./paginas/paises.html">Países (REST Countries)</a>
+          <a href="./paginas/pokemon.html">Pokémon (PokéAPI)</a>
+          <a href="./paginas/rick_morty.html">Rick & Morty</a>
+          <a href="./paginas/criptomonedas.html">Criptomonedas (CoinGecko)</a>
+        </div>
+      </div>
+
+      <!-- Multimedia -->
+      <div class="nav-item">
+        <span class="nav-link">Multimedia ▼</span>
+        <div class="dropdown-content">
+          <a href="./paginas/multimedia1.html">Mapas</a>
+          <a href="./paginas/multimedia2.html">Videos YouTube</a>
+          <a href="./paginas/multimedia3.html">Videos MP4 + Audios</a>
+        </div>
+      </div>
+
+      <!-- Menús personalizados -->
+      <div class="nav-item">
+        <span class="nav-link">Menús ▼</span>
+        <div class="dropdown-content">
+          <a href="./paginas/Menu1.html">Menú 1</a>
+          <a href="./paginas/Menu2.html">Menú 2</a>
+          <a href="./paginas/Menu3.html">Menú 3</a>
+        </div>
+      </div>
+
+      <!-- Red social -->
+      <div class="nav-item">
+        <span class="nav-link">Red Social ▼</span>
+        <div class="dropdown-content">
+          <a href="./paginas/redsocial.html">Red Social</a>
+          <a href="./paginas/comentarios.html">Comentarios</a>
+          <a href="./paginas/noticias.html">Noticias</a>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <!-- Bienvenida interactiva -->
+    <section class="welcome-box">
+      <h2>Bienvenido/a al sitio</h2>
+      <p>Completa tus datos para el ingreso al sitio.</p>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre">
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido">
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad">
+
+      <button id="btnSaludar">Ingresar</button>
+
+      <p id="mensajeBienvenida"></p>
+    </section>
+
+    <!-- Descripción general -->
+    <section>
+      <h2>Descripción general del sitio</h2>
+      <p>
+        Este sitio web reúne diferentes trabajos prácticos de la materia. 
+        Cada menú y subpágina muestra un tema específico:
+      </p>
+
+      <ul>
+        <li><strong>HTML básico:</strong> Conceptos iniciales de HTML.</li>
+        <li><strong>Banco:</strong> Tabla y miembros del banco.</li>
+        <li><strong>Galería:</strong> Imágenes.</li>
+        <li><strong>Operaciones:</strong> Cálculos con JavaScript.</li>
+        <li><strong>Formularios:</strong> Matriculación y prueba.</li>
+        <li><strong>APIs:</strong> Clima, Países, Pokémon, Rick & Morty, Criptomonedas.</li>
+        <li><strong>Multimedia:</strong> Mapas, videos y audios.</li>
+        <li><strong>Menús:</strong> Menús personalizados.</li>
+        <li><strong>Red social:</strong> Publicaciones con likes.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Script externo -->
+  <script src="js/bienvenida.js"></script>
+</body>
+</html>

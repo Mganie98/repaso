@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de Operaciones</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/calculos.js"></script>
+</head>
+<body>
+  <h1>Tabla de Operaciones</h1>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th class="encabezado animado">OPERACIÓN</th>
+        <th class="encabezado animado">DESCRIPCIÓN</th>
+        <th class="encabezado animado">BOTÓN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Suma</td>
+        <td>Suma los dos números ingresados</td>
+        <td><button onclick="operacion('suma')">Calcular</button></td>
+      </tr>
+      <tr>
+        <td>División</td>
+        <td>Divide el primer número con el segundo</td>
+        <td><button onclick="operacion('division')">Calcular</button></td>
+      </tr>
+      <tr>
+        <td>Promedio</td>
+        <td>Promedia dos números ingresados</td>
+        <td><button onclick="operacion('promedio')">Calcular</button></td>
+      </tr>
+      <tr>
+        <td>Resta</td>
+        <td>Resta el segundo número del primero</td>
+        <td><button onclick="operacion('resta')">Calcular</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="botones">
+    <a href="./index.html" class="animado">Inicio</a>
+    <a href="galeria.html" class="animado">Galería</a>
+  </div>
+
+</body>
+</html>

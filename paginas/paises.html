@@ -1,0 +1,69 @@
+<!-- paises.html completo aquí -->
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto APIs – Inicio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="api-page">
+
+<div class="app-container">
+    <header>
+        <div class="logo-title">
+            <h1>API de Países</h1>
+            <p>Información básica con REST Countries</p>
+        </div>
+        <div class="badge">Países</div>
+    </header>
+
+    <nav class="nav-buttons">
+       <a class="nav-btn" href="./index.html">Inicio</a>
+        <a class="nav-btn" href="clima.html">API Clima</a>
+        <a class="nav-btn" href="paises.html">API Países</a>
+        <a class="nav-btn" href="pokemon.html">API Pokémon</a>
+        <a class="nav-btn" href="rick_morty.html">API Rick & Morty</a>
+        <a class="nav-btn" href="criptomonedas.html">API Criptomonedas</a>
+    </nav>
+
+    <section class="main-content">
+        <div class="tool-card">
+            <h2>Buscador de países</h2>
+            <p class="description">
+                Ingresá un país y obtené su nombre oficial, capital, población y bandera.
+            </p>
+
+            <div class="form-group">
+                <label for="pais-input">País</label>
+                <input id="pais-input" type="text" placeholder="Ej: Argentina">
+            </div>
+            <button id="btn-buscar-pais" class="btn-primary">
+                <span>Buscar país</span>
+            </button>
+
+            <div id="pais-resultado" class="result-card" style="display:none;">
+                <div class="result-title">Datos del país</div>
+                <img id="pais-bandera" class="result-img" alt="Bandera del país" />
+                <div class="result-grid">
+                    <div>
+                        <div class="result-label">Nombre</div>
+                        <div id="pais-nombre" class="result-value"></div>
+                    </div>
+                    <div>
+                        <div class="result-label">Capital</div>
+                        <div id="pais-capital" class="result-value"></div>
+                    </div>
+                    <div>
+                        <div class="result-label">Población</div>
+                        <div id="pais-poblacion" class="result-value"></div>
+                    </div>
+                </div>
+                <p id="pais-error" class="error-message"></p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="./js/apis.js" defer></script>
+</body>
+</html>

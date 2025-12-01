@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noticias</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="news-page">
+        <div class="container">
+            <h2>Noticias</h2>
+
+            <div class="card">
+                <h3>Selección Paraguaya</h3>
+                <p>Paraguay se consagra bicampeón de América.</p>
+                <img src="https://www.abc.com.py/resizer/v2/https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fabccolor%2FGCIE46VPCVGIZPYDUGDSIBV3CU.jpg?auth=041dc274d5981811e40666bf7165303a22903e8045d1d2d940ec6bba313ad78d&width=770&smart=true" class="media" />
+                <span class="like-btn" data-liked="false" data-likes="0">🤍 Like </span>
+            </div>
+
+            <div class="card">
+                <h3>Hospital veterinario público será realidad en Paraguay</h3>
+                <p>El Hospital Nacional Público Veterinario CASA será el primer centro público del país con servicios integrales para animales y atención gratuita para familias vulnerables..</p>
+                 <img src="https://enlinea.santotomas.cl/web/wp-content/uploads/sites/2/2016/08/vet-744x465.jpg" class="media" />
+
+                <span class="like-btn" data-liked="false" data-likes="0">🤍 Like </span>
+            </div>
+
+            <div class="card">
+                <h3>¡Cerro Porteño campeón del torneo Clausura 2025!</h3>
+                <p>¡Cerro Porteño es el flamante campeón del Torneo Clausura 2025! El “Ciclón” se coronó con un triunfo de 2-0 sobre el ya descendido Atlético Tembetary, con los tantos de Juan Manuel Iturbe y Jorge Morel sellando el título y poniendo un emotivo fin a la espera de cuatro largos años. La victoria se concretó en el Estadio Defensores del Chaco.</p>
+              <img src="https://www.abc.com.py/resizer/v2/YQ4G3YGAEJDQFFGYDNSQBXYM5M.jpg?auth=32a6a2cf55c8620352a360604fb76570eca25c1895191b2a159d283430b7bca8&width=770&smart=true" class="media">
+                <span class="like-btn" data-liked="false" data-likes="0">🤍 Like</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const botones = document.querySelectorAll(".like-btn");
+
+        botones.forEach(boton => {
+            boton.addEventListener("click", () => {
+
+                let likes = parseInt(boton.getAttribute("data-likes"));
+                let liked = boton.getAttribute("data-liked") === "true";
+
+                if (liked) {
+                    // Quitar like
+                    likes--;
+                    boton.setAttribute("data-liked", "false");
+                    boton.textContent = `🤍 Like ${likes}`;
+                } else {
+                    // Dar like
+                    likes++;
+                    boton.setAttribute("data-liked", "true");
+                    boton.textContent = `Te gusta ❤️ ${likes}`;
+                }
+
+                // Guardar nuevo total
+                boton.setAttribute("data-likes", likes);
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto APIs – Inicio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="api-page">
+
+<div class="app-container">
+    <header>
+        <div class="logo-title">
+            <h1>API Criptomonedas</h1>
+            <p>Precio en USD, cambio 24h y market cap (CoinGecko)</p>
+        </div>
+        <div class="badge">Cripto</div>
+    </header>
+
+    <nav class="nav-buttons">
+        <a class="nav-btn" href="../index.html">Inicio</a>
+        <a class="nav-btn" href="clima.html">API Clima</a>
+        <a class="nav-btn" href="paises.html">API Países</a>
+        <a class="nav-btn" href="pokemon.html">API Pokémon</a>
+        <a class="nav-btn" href="rick_morty.html">API Rick & Morty</a>
+        <a class="nav-btn" href="criptomonedas.html">API Criptomonedas</a>
+    </nav>
+
+    <section class="main-content">
+        <div class="tool-card">
+            <h2>Información de criptomonedas</h2>
+            <p class="description">
+                Elegí una cripto para ver su precio en USD, cambio en las últimas 24 horas y capitalización de mercado.
+            </p>
+
+            <div class="form-group">
+                <label for="cripto-select">Criptomoneda</label>
+                <select id="cripto-select">
+                    <option value="bitcoin">Bitcoin (BTC)</option>
+                    <option value="ethereum">Ethereum (ETH)</option>
+                    <option value="cardano">Cardano (ADA)</option>
+                    <option value="litecoin">Litecoin (LTC)</option>
+                    <option value="dogecoin">Dogecoin (DOGE)</option>
+                </select>
+            </div>
+            <button id="btn-buscar-cripto" class="btn-primary">
+                <span>Consultar cripto</span>
+            </button>
+
+            <div id="cripto-resultado" class="result-card" style="display:none;">
+                <div class="result-title">Datos de mercado</div>
+                <div class="result-grid">
+                    <div>
+                        <div class="result-label">Criptomoneda</div>
+                        <div id="cripto-nombre" class="result-value"></div>
+                    </div>
+                    <div>
+                        <div class="result-label">Precio (USD)</div>
+                        <div id="cripto-precio" class="result-value"></div>
+                    </div>
+                    <div>
+                        <div class="result-label">Cambio 24h</div>
+                        <div id="cripto-cambio" class="result-value"></div>
+                    </div>
+                    <div>
+                        <div class="result-label">Market Cap</div>
+                        <div id="cripto-marketcap" class="result-value"></div>
+                    </div>
+                </div>
+                <p id="cripto-error" class="error-message"></p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="./js/apis.js" defer></script>
+</body>
+</html>
