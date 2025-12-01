@@ -174,15 +174,7 @@ p {
     margin-top: 0;
   }
 }
-Aquí tienes **todo tu CSS completo**, **corregido** y con los ajustes para que:
 
-✅ Los recuadros se adapten a las imágenes
-✅ Las imágenes NO sobresalgan
-✅ El hover siga funcionando
-
-**Copia y pega este CSS directamente:**
-
-```css
 /* BANCO */
 
 .banco-page {
@@ -332,24 +324,21 @@ th, td {
 th {
     background: #4CAF50;
     color: white;
+    
 }
-
-
-
-Si quieres, también puedo ajustar el HTML para que quede perfectamente alineado.
 
 
 
 /* GALERÍA */
 .galeria {
     display: flex;
-    justify-content: center;   
-    align-items: center;       
-    flex-wrap: wrap;           
-    gap: 25px;                 
-    padding: 20px;             
-    width: 100%;               
-    box-sizing: border-box;    
+    justify-content: center;   /* Centra los elementos */
+    align-items: center;       /* Alinea verticalmente si hay diferentes alturas */
+    flex-wrap: wrap;           /* Permite que se ajusten en varias filas */
+    gap: 25px;                 /* Espaciado uniforme */
+    padding: 20px;             /* Respiración interna */
+    width: 100%;               /* Evita que se limite el ancho */
+    box-sizing: border-box;    /* Evita desbordamientos */
 }
 
 
