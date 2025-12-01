@@ -246,6 +246,24 @@ p {
     margin-top: 20px;
 }
 
+/* Contenedor de cada empleado */
+.empleado {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: fit-content;      /* El cuadro se adapta al contenido */
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+/* Efecto hover al pasar por el cuadro */
+.empleado:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* Imagen del empleado */
 .empleado img {
     width: 150px;
     height: 150px;
@@ -253,6 +271,7 @@ p {
     transition: transform 0.5s, box-shadow 0.5s;
 }
 
+/* Hover imagen */
 .empleado:hover img {
     transform: scale(1.2) rotate(5deg);
     box-shadow: 0 6px 15px rgba(0,0,0,0.3);
@@ -273,6 +292,7 @@ p {
     transform: scale(1.05);
     background-color: #e8f5e9;
 }
+
 
 /* TABLA BANCO - CUADRO VERDE RESPONSIVO */
 .cuadro-verde {
