@@ -419,7 +419,7 @@ button {
 button:hover {
   background-color: #61c1f0;
 }
-/* ====== FORMULARIOS TIPO IMAGEN (SIGN UP + EXAMEN) ====== */
+/*FORMULARIOS TIPO IMAGEN (SIGN UP + EXAMEN) */
 
 /* Fondo gris claro y centrado */
 body.form-body {
@@ -1025,9 +1025,7 @@ body.form-body {
 
 
 
-/* ==========================================================
-   Multimedia1 – MAPS
-   ========================================================== */
+/* Multimedia1 */
 
 .maps-page body {
     margin: 0;
@@ -1087,9 +1085,7 @@ body.form-body {
 
 
 
- /* ==========================================================
-   Multimedia2 – YOUTUBE
-   ========================================================== */
+ /* Multimedia2 */
 
 .youtube-page body {
     margin: 0;
@@ -1156,9 +1152,7 @@ body.form-body {
 
 
 
- /* ==========================================================
-   Multimedia3 – FACEBOOK MEDIA FEED
-   ========================================================== */
+ /* Multimedia3 */
 
 .fb-page body {
     margin: 0;
@@ -1237,13 +1231,13 @@ body.form-body {
     }
 }
 
-/* -------------------- ESTILOS GENERALES -------------------- */
+/* ESTILOS GENERALES */
 body {
     margin: 0;
     padding: 0;
 }
 
-/* -------------------- MENU 1 -------------------- */
+/*  MENU 1  */
 .menu1 {
     background: linear-gradient(135deg, #212fc7, #88b1c3);
     min-height: 100vh;
@@ -1288,7 +1282,7 @@ body {
     100% { transform: translateY(0); }
 }
 
-/* -------------------- MENU 2 -------------------- */
+/*  MENU 2  */
 .menu2 {
     background: #1e1e1e;
     min-height: 100vh;
@@ -1335,7 +1329,7 @@ body {
     100% { transform: scale(1); }
 }
 
-/* -------------------- MENU 3 -------------------- */
+/*  MENU 3  */
 .menu3 {
     background: url("https://images.unsplash.com/photo-1503264116251-35a269479413") no-repeat center center;
     background-size: cover;
@@ -1382,7 +1376,7 @@ body {
     100% { transform: translateY(0); }
 }
 
-/* -------------------- RESPONSIVE -------------------- */
+/*RESPONSIVE */
 
 /* Tablets */
 @media (max-width: 768px) {
